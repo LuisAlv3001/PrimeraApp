@@ -2,11 +2,15 @@ package cr.ac.ucr.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import cr.ac.ucr.primeraapp.utils.AppPreference;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -52,6 +56,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         //TODO: Se tiene que hacer on la logica de autenticacion de la aplicacion
         if(email.equalsIgnoreCase("admin@email.com") && "123".equalsIgnoreCase(password)){
             //TODO: almacenar en el storage el usuario logueado
+
+            AppPreference.getInstance(this).put(AppPreference.Keys.IS_LOGGED_IN, true);
 
             Toast.makeText(this, R.string.logged_in, Toast.LENGTH_SHORT).show();
 

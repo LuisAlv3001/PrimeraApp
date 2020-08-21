@@ -15,4 +15,9 @@
     <string name="last_name">Last name</string>
     <string name="register">Register</string>
     <string name="go_to_login">Go to login</string>
+    <string name="logout">Logout</string>
+
+    <string name="task_name">Task name</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
 </resources>

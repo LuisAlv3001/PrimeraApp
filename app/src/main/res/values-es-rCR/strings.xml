@@ -16,4 +16,9 @@
     <string name="last_name">Apellido</string>
     <string name="register">Registrarse</string>
     <string name="go_to_login">¿Ya tienes cuenta?</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <string name="task_name">Nombre de la tarea</string>
+    <string name="add">Agregar</string>
+    <string name="cancel">Cancelar</string>
 </resources>
