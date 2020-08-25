@@ -15,6 +15,7 @@ public class AppPreference {
 
     public static class Keys{
         public static final String IS_LOGGED_IN = "is_logged_in";
+        public static final String ITEMS = "items";
     }
 
     private AppPreference(Context context) {
